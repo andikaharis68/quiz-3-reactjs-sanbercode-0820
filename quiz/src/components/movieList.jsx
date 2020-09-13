@@ -46,11 +46,32 @@ const MovieList = () => {
       })
 
     setMovie({ ...movie, lists: [...newLists] })
+  }
 
+  const searching = (event) => {
+    event.preventDefault()
+    let input, filter, td, tr, p, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    td = document.querySelectorAll(".myTD");
+    tr = document.querySelectorAll(".tr-list");
+    for (i = 0; i < td.length; i++) {
+      p = td[i].getElementsByTagName("p")[0];
+      txtValue = p.textContent || p.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
   }
 
   return (
     <>
+      <form style={{ textAlign: "center" }} onSubmit={searching}>
+        <input id="myInput" type="text" />
+        <button style={{ backgroundColor: "orangered" }}>search</button>
+      </form><br />
       <table>
         <thead>
           <tr>
@@ -69,9 +90,9 @@ const MovieList = () => {
             movie.lists !== null && movie.lists.map((movie, index) => {
               // const desc = movie.description.slice(0, 200)
               return (
-                <tr>
+                <tr className="tr-list">
                   <td>{index + 1}</td>
-                  <td>{movie.title}</td>
+                  <td className="myTD"><p>{movie.title}</p></td>
                   <td>{movie.description}</td>
                   <td>{movie.year}</td>
                   <td>{movie.duration}</td>
