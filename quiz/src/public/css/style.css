@@ -1,0 +1,284 @@
+/* --------------------------  public  ---------------------- */
+section{
+  width: 75%;
+  margin: 27px auto;
+  padding: 27px;
+  background: white;
+  overflow: auto;
+}
+section h1{
+  text-align: center;
+  margin: 17px;
+  color: rgb(184, 49, 0);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  background-image: url('../images/pattern.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Alata', sans-serif;
+}
+footer{
+  width: 100%;
+  background: rgb(0, 20, 51);
+}
+footer h5{
+  color: rgb(36, 101, 206);
+  text-align: center;
+  padding: 20px;
+  font-weight: 100;
+}
+
+/* --------------------------  navbar  ---------------------- */
+header{
+  overflow: hidden;
+  background: white;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  box-shadow: 1px 1px 12px rgb(112, 112, 112);
+}
+header nav{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header #logo{
+  margin-top: 7px;
+  flex: 1;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+  line-height: 60px;
+}
+header nav ul li{
+  margin: 0 10px 0;
+  list-style: none;
+}
+header nav ul li a{
+  color: rgb(19, 39, 92);
+}
+.btn-login {
+  background: orangered;
+  color: white;
+  padding: 7px 12px;
+}
+.btn-logout {
+  background: orangered;
+  color: white;
+  padding: 7px 12px;
+} /* ----------------------------------------------------------- */
+
+/* --------------------------  MovieList  ---------------------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+   /* background: red;  */
+}
+table thead {
+  background: orangered;
+}
+table thead tr th {
+  padding: 7px 12px;
+  color: white
+}
+table tbody tr td {
+  border-bottom: 1px solid rgb(202, 162, 109);
+  color: rgb(0, 20, 51);
+  padding: 7px;
+}
+table tbody tr td.desc{
+  width: 100px;
+}
+.btn-edit {
+  border: none;
+  background: orangered;
+  color: white;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 7px;
+}
+.btn-del {
+  border: none;
+  background: orangered;
+  color: white;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 7px;
+}/* -------------------------------------------------------------- */
+
+/* -----------------------------  Home  --------------------------- */
+.movie-thumbnail {
+  height: 480px;
+  overflow-y: hidden;
+  flex: 1;
+  background-size: cover ;
+  background-position: center;
+  border-radius: 5px;
+}
+.movie-info {
+  display: flex;
+  margin-bottom: 12px;
+}
+.movie-info .info h2{
+  color:black; 
+}
+.atas{
+  background: orangered;
+  color:black;
+  border-radius: 10px 0 10px 0;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.info .atas {
+  display: flex;
+  height: 46px;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+.atas h2{
+  line-height: 36px;
+}
+.atas a {
+  text-align: right;
+  font-size: 13px;
+  margin-top: 12px;
+}
+.movie-info .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px
+}
+.movie-info span{
+  margin-bottom: 7px; 
+}
+.movie-info p span {
+  display: inline-block;
+}
+.article{
+  margin: 17px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(126, 175, 255);
+}
+.article a h3{
+  margin: 7px 0;
+  color: rgb(10, 79, 190);
+}/* -------------------------------------------------------------- */
+
+/* ---------------------------  MovieForm  ----------------------- */
+.movie-search {
+  width: 40%;
+  margin: 12px auto;
+}
+.movie-search input {
+  padding: 3px 7px;
+}
+.movie-form {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px ;
+}
+.login {
+  width: 28%;
+  margin: 120px auto;
+  background: white;
+  padding: 7px 12px;
+}
+
+.formulir{
+  background: white;
+  padding: 17px;
+}
+.isian{
+  margin-top: 12px;
+}
+.isian input.input-text{
+  background: rgb(233, 204, 180);
+  width: 100%;
+  height: 32px;
+  border: none;
+  margin-top: 7px;
+  padding: 0 7px;
+}
+.isian textarea{
+  width: 100%;
+  border: none;
+  margin: 7px 0 7px;
+  padding: 7px;
+  background:rgb(233, 204, 180);
+}
+.btn-kirim{
+  padding: 7px 24px;
+  background: orangered;
+  border: none;
+  font-weight: 600;
+  margin: 12px 380px 7px;
+  color: white;
+  border-radius: 10px;
+}
+
+.about{/* ------------------------------- About ------------------------------*/
+  margin: 50px auto 0;
+  background:white;
+  border-radius: 12px; 
+  width: 700px;
+}
+.about h2{
+  text-align: center;
+  color: rgb(226, 60, 0);
+}
+.foto {
+  width: 175px;
+  height: 185px;
+  background-image: url('../images/andika.jpg');
+  background-size: cover;
+  background-position: center;  
+  border-radius: 20%;
+  margin: 17px;
+  border: 10px solid white;
+  display: flex;
+}
+.about ol {
+  margin: 17px;
+  padding: 17px;
+  margin-left: 20px;
+} 
+.about ol li{
+  font-family: "Lucida Console", Courier, monospace;
+}
+.backHome{
+  color: rgb(226, 60, 0);
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+  font-weight: bold;
+}
+ /* --------------------------------------------------------------------*/
+
+
+.contact {
+  width: 525px;
+  margin: 52px auto;
+}
+.data{
+  flex: 1;
+}
+#cowo {
+  margin-left: 12px;
+}
+
+
+
+
+
+
