@@ -35,7 +35,7 @@ class Home extends Component {
                       <div className="info">
                         <div className="atas">
                           <h2>{movie.title}</h2>
-                          <a>{duration.toFixed(0)} Hours | {movie.genre} Genre| {movie.rating} Star</a>
+                          <a>{duration.toFixed(0)} Hours | {movie.genre} Genre | {movie.rating} Star</a>
                         </div>
                         <p style={{ textAlign: "justify", marginTop: "12px" }}>
                           <span><strong>Description:</strong> </span><br />{movie.description}

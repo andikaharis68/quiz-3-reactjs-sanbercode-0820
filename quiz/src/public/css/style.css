@@ -71,11 +71,13 @@ header nav ul li a{
   background: orangered;
   color: white;
   padding: 7px 12px;
+  border-radius: 10px 0 10px 0;
 }
 .btn-logout {
   background: orangered;
   color: white;
   padding: 7px 12px;
+  border-radius: 10px 0 10px 0;
 } /* ----------------------------------------------------------- */
 
 /* --------------------------  MovieList  ---------------------- */

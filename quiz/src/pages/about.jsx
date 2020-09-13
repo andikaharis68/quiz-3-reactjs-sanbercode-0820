@@ -10,9 +10,9 @@ const About = () => {
           <div className="foto"> </div>
           <ol>
             <li>Nama: Moch Andika Haris Saputra</li>
-            <li>Email: andikaharis@gmail.com</li>
+            <li>Email: andikaharis68@gmail.com</li>
             <li>Sistem Operasi yang digunakan: Windows 10</li>
-            <li>Akun Github: andikaharis</li>
+            <li>Akun Github: andikaharis68</li>
             <li>Akun Telegram: andikaharis</li><br />
             <Link to="/home" className="backHome">HOME</Link>
           </ol>
