@@ -125,7 +125,7 @@ const MovieForm = () => {
           </div>
           <div class="isian">
             <label for="year">Year</label><br />
-            <input className="input-text" type="number" id="year" name="year" value={input.year} onChange={handleChange} /><br />
+            <input className="input-text" type="number" id="year" min="1980" name="year" value={input.year} onChange={handleChange} /><br />
           </div>
           <div class="isian">
             <label for="duration">Duration</label><br />
@@ -137,7 +137,7 @@ const MovieForm = () => {
           </div>
           <div class="isian">
             <label for="rating">Rating</label><br />
-            <input className="input-text" type="number" id="rating" name="rating" value={input.rating} onChange={handleChange} /><br />
+            <input className="input-text" type="number" id="rating" name="rating" max="10" value={input.rating} onChange={handleChange} /><br />
           </div>
           <div class="isian">
             <label for="image">Image Url</label><br />
